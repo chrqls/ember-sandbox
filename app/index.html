@@ -3,23 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>EmberSandbox</title>
+    <title>Ember Sandbox</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <div style="color:red; font-weight: bold">head</div>
     {{content-for "head"}}
+    <div style="color:red; font-weight: bold">head -----</div>
 
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link rel="stylesheet" href="{{rootURL}}assets/ember-sandbox.css">
 
+    <div style="color:green; font-weight: bold">head-footer</div>
     {{content-for "head-footer"}}
+    <div style="color:green; font-weight: bold">head-footer -----</div>
   </head>
+
   <body>
+    <div style="color:blue; font-weight: bold">body</div>
     {{content-for "body"}}
+    <div style="color:blue; font-weight: bold">body -----</div>
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/ember-sandbox.js"></script>
 
+    <div style="color:orange; font-weight: bold">body-footer</div>
     {{content-for "body-footer"}}
+    <div style="color:orange; font-weight: bold">body-footer -----</div>
   </body>
 </html>
